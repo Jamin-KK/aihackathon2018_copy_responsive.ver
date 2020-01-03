@@ -1,0 +1,271 @@
+/* /////for manu slide vb    // //    //w3scool _Off-Canvas Menu_2 */
+body{
+    position: relative;
+}
+
+header {
+    /* border: 5px solid red; */
+    height: 80px;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    z-index: 100;
+}
+ 
+header h1, h2 {
+    /* border: 3px solid black; */
+    float: left;
+}
+
+header h1 a {
+    /* border: 3px solid red; */
+    display: inline-block;
+    width: 67px;
+    /* background-image: url("../img/sp_all_v4.png"); */
+}
+
+header h2 a {
+    /* border: 3px solid red; */
+    display: inline-block;
+    width: 175px;
+    /* background-image: url("../img/sp_all_v4.png"); */
+    background-position-x: -66px;
+}
+
+header #gnb {
+    /* border: 1px solid blue; */
+    float: right;
+    /* margin-top: 20px; */
+    position: relative;
+}
+
+header #gnb li {
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 500;
+}
+header #gnb li a:hover {
+    color: #009070
+}
+/* header #gnb li:first-child a {
+    color: #009070;
+} */
+
+#gnb .mobile {
+    display: none;
+}
+
+header #gnb li:first-child {
+    margin-left: 0;
+}
+
+header #gnb #greenBar {
+    border-bottom: 6px solid #009070;
+    position: absolute;
+    top: 43px;
+    /* left: 0;
+    width: 39px; */
+    transition: width 0.1s;
+}
+
+@media screen and (max-width: 1000px) {
+    #section2 {
+        /* border: 5px solid rgb(214, 52, 165); */
+    }
+    header {
+        text-align: center;
+    }
+    header #gnb li {
+        /* border: 1px solid black; */
+        font-size: 16px;
+        margin-left: 16px;
+    }
+    header #gnb li:nth-of-type(2) {
+        margin-left: 0;
+    }
+    #gnb li:first-child, #gnb li:last-child {
+        display: none;
+    }
+    #gnb .mobile {
+        display: inline-block;
+    }
+    h1 {
+        /* border: 1px solid red; */
+        margin-left: 20px;
+    }
+    /* trigger 메뉴 start ------------------------------------------------------------------ */
+    #trigger {
+        cursor: pointer;
+        /* border: 2px solid blue; */
+        width: 40px;
+        height: 34px;
+        position: relative;
+        float: left;
+        margin-left: 0px;
+        margin-top: -8px;
+    }
+    #trigger:hover span {
+        background-color: #009070;
+    }
+    /*
+    #trigger:hover span:nth-of-type(1) {
+        transform: translateY(15px) rotate(45deg);      
+    }
+    #trigger:hover span:nth-of-type(2) {
+        opacity: 0;    
+    }
+    #trigger:hover span:nth-of-type(3) {
+        transform: translateY(-15px) rotate(-45deg);      
+    }
+    */
+    #trigger span {
+        /* border: 1px solid red; */
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #333;
+        /* margin-bottom: 20px; */
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s;
+        /* top: 0;
+    left: 0; */
+    }
+    #trigger span:nth-of-type(1) {
+        top: 0;
+        /* transform: rotate(45deg); */
+    } 
+    #trigger span:nth-of-type(2) {
+        top: 15px;
+    }
+    #trigger span:nth-of-type(3) {
+        top: 30px;
+    }
+    /* trigger 메뉴 end ------------------------------------------------------------------ */
+
+    /* 모바일 메뉴 start ------------------------------------------------------------------ */
+    #m_gnb_close {
+        /* display: none; */
+        /* position: fixed; */
+        /* top: 25px; */
+        /* right: 85px; */
+        /* margin-right: -17px; */
+        /* z-index: 1; */
+        /* border: none; */
+        /* background-color: transparent; */
+        /* color: white; */
+        font-size: 40px;
+        /* border: 1px solid yellow; */
+        /* cursor: pointer; */
+    }
+    #mobile_gnb {
+        display: block !important;
+        /* display: none; */
+        background-color: black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0px;
+        /* width: 0; */
+        height: 100%;
+        padding: 0 0 30px 0;
+        box-sizing: border-box;
+        transition: width 0.5s;
+    }
+    #mobile_gnb li {
+        /* padding: 20px 0; */
+    }
+    #mobile_gnb a {
+        /* border: 2px solid red; */
+        border-top: 1px solid #555;
+        color: white;
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+    #mobile_gnb li:first-child a {
+        border-top: none;
+    }
+    #mobile_gnb li:first-child a:hover {
+        background-color: transparent;
+        color: #009070;
+    }
+    #mobile_gnb li:last-child a {
+        border-bottom: 1px solid #555;
+    }
+    #mobile_gnb a:hover {
+        color: black;
+        background-color: #aaa;
+    }
+    /* 모바일 메뉴 end ------------------------------------------------------------------ */
+}
+
+@media screen and (max-width: 880px) {
+    #gnb li:nth-of-type(2), #gnb li:nth-of-type(3) {
+        display: none;
+    }
+    #gnb li:nth-of-type(4) {
+        margin-left: 0;
+    }
+    #section2 {
+        /* border: 10px solid aqua; */
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        /* border: 2px solid red; */
+        padding: 20px 0;
+        height: 130px;
+    }
+    h1 {
+        /* border: 1px solid red; */
+        margin-left: 0px;
+        font-size: 26px;
+    }
+    h1, h2 {
+        float: none !important;
+        /* border: 2px solid red; */
+        display: inline-block;
+    }
+    #gnb li:nth-of-type(2), #gnb li:nth-of-type(3) {
+        display: inline-block;
+    }
+    #gnb li:nth-of-type(4) {
+        margin-left: 16px;
+    }
+    #trigger {
+        /* border: 3px solid red; */
+        margin-left: 15px;
+    }
+    header #gnb {
+        /* border: 2px solid red;    */
+        border-top: 2px solid #eee;
+        float: none !important;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    h1 {
+        display: none;
+    }
+    #trigger {
+        margin-left: 15px;
+    }
+    header #gnb li:nth-of-type(3) {
+        display: none;
+    }
+    #mobile_gnb {
+        font-size: 14px;
+        padding-top: 60px;
+    }
+    #m_gnb_close {
+        /* border: 2px solid yellow; */
+        font-size: 35px;
+        top: 15px;
+    }
+}
