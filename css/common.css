@@ -1,7 +1,7 @@
-/* 구글 폰트 로드 */
+/* font */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900|Noto+Serif+KR:400,500,700|Roboto:400,500,900&display=swap');
 
-/* 초기화 코드 */
+/* reset */
 body, h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl, dt, dd {
     margin: 0;
     padding: 0;
